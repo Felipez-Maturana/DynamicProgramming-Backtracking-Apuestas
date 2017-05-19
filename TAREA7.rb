@@ -71,7 +71,7 @@ def dinamicProgrammingApuestas(apuestas)
 		end
 	end
 	matriz[0][29]=matriz[0][28]+matriz[29][29]
-	CSV.open("file.csv", "w") do |csv|
+	CSV.open("apuestas.csv", "w") do |csv|
 	 	i=0
 	 	while(i<30)
 	 		csv << matriz[i]
